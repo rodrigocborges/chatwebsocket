@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatWebSocketServer", "ChatWebSocketServer.csproj", "{F117465C-AC56-4ED2-850E-C92CCB573C95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F117465C-AC56-4ED2-850E-C92CCB573C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F117465C-AC56-4ED2-850E-C92CCB573C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F117465C-AC56-4ED2-850E-C92CCB573C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F117465C-AC56-4ED2-850E-C92CCB573C95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38528075-692B-4168-A36F-EB15F01CDC8A}
+	EndGlobalSection
+EndGlobal
