@@ -1,29 +1,22 @@
-﻿using ChatWebSocketServer.Controllers;
-using ChatWebSocketServer.Models;
+﻿using ChatWebSocketServer.Util;
 using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
 
 namespace ChatWebSocketServer
 {
     class Program
-    {
+    { 
         static void Main(string[] args)
         {
-            IMessage message = new MessageController();
+            Console.Title = "Servidor";
+            Server server = new Server(9999);
+            server.Start();
 
-            if (message == null)
-                return;
-
-            //Cadastra usuários
-            IUser user1 = new User(username: "Rodrigo");
-            IUser user2 = new User(username: "Zé");
-
-            //Adiciona os dois usuários para poder receber as mensagens
-            message.Add(observer: user1);
-            message.Add(observer: user2);
-
-            //Envia mensagem
-            message.SendMessage();
-
+            ConsoleLog.Write(message: "Pressione 'enter' para fechar o console.", color: ConsoleColor.Blue, type: MessageType.INFO);
             Console.ReadKey();
         }
     }

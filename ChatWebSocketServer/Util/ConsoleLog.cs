@@ -8,7 +8,8 @@ namespace ChatWebSocketServer.Util
     {
         INFO,
         ERROR,
-        WARNING
+        WARNING,
+        CHAT
     }
     //Classe de utilidade para escrever coisas na tela de forma simples e personalizável
     public static class ConsoleLog
@@ -26,6 +27,9 @@ namespace ChatWebSocketServer.Util
                     break;
                 case MessageType.WARNING:
                     typeColor = ConsoleColor.DarkYellow;
+                    break;
+                case MessageType.CHAT:
+                    typeColor = ConsoleColor.DarkMagenta;
                     break;
             }
 
